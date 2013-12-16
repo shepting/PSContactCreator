@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3721FB7616728F320079C930 /* YMContactCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721FB7516728F320079C930 /* YMContactCreator.m */; };
+		3725376C1671786400B7C051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725376B1671786400B7C051 /* UIKit.framework */; };
+		3725376E1671786400B7C051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725376D1671786400B7C051 /* Foundation.framework */; };
+		372537701671786400B7C051 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725376F1671786400B7C051 /* CoreGraphics.framework */; };
+		372537761671786400B7C051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 372537741671786400B7C051 /* InfoPlist.strings */; };
+		372537781671786400B7C051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537771671786400B7C051 /* main.m */; };
+		3725377C1671786400B7C051 /* YMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3725377B1671786400B7C051 /* YMAppDelegate.m */; };
+		3725377E1671786400B7C051 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3725377D1671786400B7C051 /* Default.png */; };
+		372537801671786400B7C051 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3725377F1671786400B7C051 /* Default@2x.png */; };
+		372537821671786400B7C051 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372537811671786400B7C051 /* Default-568h@2x.png */; };
+		372537851671786400B7C051 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372537831671786400B7C051 /* MainStoryboard.storyboard */; };
+		372537881671786400B7C051 /* YMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537871671786400B7C051 /* YMViewController.m */; };
+		373429E216825493003D8FF7 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429DD16825493003D8FF7 /* UIColor+Extensions.m */; };
+		373429E316825493003D8FF7 /* YDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429DF16825493003D8FF7 /* YDButton.m */; };
+		373429E416825493003D8FF7 /* YMDrawingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429E116825493003D8FF7 /* YMDrawingAdditions.m */; };
+		373429E716825BC0003D8FF7 /* YMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429E616825BC0003D8FF7 /* YMColor.m */; };
+		373429E916825BDA003D8FF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373429E816825BDA003D8FF7 /* QuartzCore.framework */; };
+		373429EB16825F0D003D8FF7 /* blue_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 373429EA16825F0D003D8FF7 /* blue_background@2x.png */; };
+		3757DCE81676823800C8217D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3757DCE71676823800C8217D /* AddressBook.framework */; };
+		8A86592227EE4FD5829DB2F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AB9ABAB4374EA5AD3D862D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		174A7D49F9364E6A9E80C253 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		3721FB7416728F320079C930 /* YMContactCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMContactCreator.h; sourceTree = "<group>"; };
+		3721FB7516728F320079C930 /* YMContactCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMContactCreator.m; sourceTree = "<group>"; };
+		3721FB7816728F960079C930 /* Names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Names.h; sourceTree = "<group>"; };
+		372537671671786400B7C051 /* Contact Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3725376B1671786400B7C051 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3725376D1671786400B7C051 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3725376F1671786400B7C051 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		372537731671786400B7C051 /* Contact Creator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Contact Creator-Info.plist"; sourceTree = "<group>"; };
+		372537751671786400B7C051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		372537771671786400B7C051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		372537791671786400B7C051 /* Contact Creator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contact Creator-Prefix.pch"; sourceTree = "<group>"; };
+		3725377A1671786400B7C051 /* YMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAppDelegate.h; sourceTree = "<group>"; };
+		3725377B1671786400B7C051 /* YMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAppDelegate.m; sourceTree = "<group>"; };
+		3725377D1671786400B7C051 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3725377F1671786400B7C051 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		372537811671786400B7C051 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		372537841671786400B7C051 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		372537861671786400B7C051 /* YMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMViewController.h; sourceTree = "<group>"; };
+		372537871671786400B7C051 /* YMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMViewController.m; sourceTree = "<group>"; };
+		373429DC16825493003D8FF7 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		373429DD16825493003D8FF7 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		373429DE16825493003D8FF7 /* YDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDButton.h; sourceTree = "<group>"; };
+		373429DF16825493003D8FF7 /* YDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDButton.m; sourceTree = "<group>"; };
+		373429E016825493003D8FF7 /* YMDrawingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDrawingAdditions.h; sourceTree = "<group>"; };
+		373429E116825493003D8FF7 /* YMDrawingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDrawingAdditions.m; sourceTree = "<group>"; };
+		373429E516825BC0003D8FF7 /* YMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColor.h; sourceTree = "<group>"; };
+		373429E616825BC0003D8FF7 /* YMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColor.m; sourceTree = "<group>"; };
+		373429E816825BDA003D8FF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		373429EA16825F0D003D8FF7 /* blue_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue_background@2x.png"; path = "Resources/blue_background@2x.png"; sourceTree = SOURCE_ROOT; };
+		3757DCE71676823800C8217D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		E3AB9ABAB4374EA5AD3D862D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		372537641671786400B7C051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373429E916825BDA003D8FF7 /* QuartzCore.framework in Frameworks */,
+				3757DCE81676823800C8217D /* AddressBook.framework in Frameworks */,
+				3725376C1671786400B7C051 /* UIKit.framework in Frameworks */,
+				3725376E1671786400B7C051 /* Foundation.framework in Frameworks */,
+				372537701671786400B7C051 /* CoreGraphics.framework in Frameworks */,
+				8A86592227EE4FD5829DB2F0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3725375C1671786400B7C051 = {
+			isa = PBXGroup;
+			children = (
+				373429E816825BDA003D8FF7 /* QuartzCore.framework */,
+				372537711671786400B7C051 /* Contact Creator */,
+				372537721671786400B7C051 /* Resources */,
+				3725376A1671786400B7C051 /* Frameworks */,
+				372537681671786400B7C051 /* Products */,
+				174A7D49F9364E6A9E80C253 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		372537681671786400B7C051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				372537671671786400B7C051 /* Contact Creator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3725376A1671786400B7C051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3757DCE71676823800C8217D /* AddressBook.framework */,
+				3725376B1671786400B7C051 /* UIKit.framework */,
+				3725376D1671786400B7C051 /* Foundation.framework */,
+				3725376F1671786400B7C051 /* CoreGraphics.framework */,
+				E3AB9ABAB4374EA5AD3D862D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		372537711671786400B7C051 /* Contact Creator */ = {
+			isa = PBXGroup;
+			children = (
+				373429DB168250F7003D8FF7 /* Views & Controllers */,
+				373429D9168250E2003D8FF7 /* Model */,
+			);
+			path = "Contact Creator";
+			sourceTree = "<group>";
+		};
+		372537721671786400B7C051 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				373429EA16825F0D003D8FF7 /* blue_background@2x.png */,
+				372537731671786400B7C051 /* Contact Creator-Info.plist */,
+				372537741671786400B7C051 /* InfoPlist.strings */,
+				372537771671786400B7C051 /* main.m */,
+				372537791671786400B7C051 /* Contact Creator-Prefix.pch */,
+				3725377D1671786400B7C051 /* Default.png */,
+				3725377F1671786400B7C051 /* Default@2x.png */,
+				372537811671786400B7C051 /* Default-568h@2x.png */,
+			);
+			name = Resources;
+			path = "Contact Creator";
+			sourceTree = "<group>";
+		};
+		373429D9168250E2003D8FF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3721FB7816728F960079C930 /* Names.h */,
+				3721FB7416728F320079C930 /* YMContactCreator.h */,
+				3721FB7516728F320079C930 /* YMContactCreator.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		373429DB168250F7003D8FF7 /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				373429E516825BC0003D8FF7 /* YMColor.h */,
+				373429E616825BC0003D8FF7 /* YMColor.m */,
+				373429DC16825493003D8FF7 /* UIColor+Extensions.h */,
+				373429DD16825493003D8FF7 /* UIColor+Extensions.m */,
+				373429DE16825493003D8FF7 /* YDButton.h */,
+				373429DF16825493003D8FF7 /* YDButton.m */,
+				373429E016825493003D8FF7 /* YMDrawingAdditions.h */,
+				373429E116825493003D8FF7 /* YMDrawingAdditions.m */,
+				3725377A1671786400B7C051 /* YMAppDelegate.h */,
+				3725377B1671786400B7C051 /* YMAppDelegate.m */,
+				372537831671786400B7C051 /* MainStoryboard.storyboard */,
+				372537861671786400B7C051 /* YMViewController.h */,
+				372537871671786400B7C051 /* YMViewController.m */,
+			);
+			name = "Views & Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		372537661671786400B7C051 /* Contact Creator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3725378B1671786400B7C051 /* Build configuration list for PBXNativeTarget "Contact Creator" */;
+			buildPhases = (
+				372537631671786400B7C051 /* Sources */,
+				372537641671786400B7C051 /* Frameworks */,
+				372537651671786400B7C051 /* Resources */,
+				AD857EE4E4164D90B309C330 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contact Creator";
+			productName = "Contact Creator";
+			productReference = 372537671671786400B7C051 /* Contact Creator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3725375E1671786400B7C051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Yammer;
+			};
+			buildConfigurationList = 372537611671786400B7C051 /* Build configuration list for PBXProject "Contact Creator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3725375C1671786400B7C051;
+			productRefGroup = 372537681671786400B7C051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				372537661671786400B7C051 /* Contact Creator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		372537651671786400B7C051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372537761671786400B7C051 /* InfoPlist.strings in Resources */,
+				3725377E1671786400B7C051 /* Default.png in Resources */,
+				372537801671786400B7C051 /* Default@2x.png in Resources */,
+				372537821671786400B7C051 /* Default-568h@2x.png in Resources */,
+				372537851671786400B7C051 /* MainStoryboard.storyboard in Resources */,
+				373429EB16825F0D003D8FF7 /* blue_background@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD857EE4E4164D90B309C330 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		372537631671786400B7C051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372537781671786400B7C051 /* main.m in Sources */,
+				3725377C1671786400B7C051 /* YMAppDelegate.m in Sources */,
+				372537881671786400B7C051 /* YMViewController.m in Sources */,
+				3721FB7616728F320079C930 /* YMContactCreator.m in Sources */,
+				373429E216825493003D8FF7 /* UIColor+Extensions.m in Sources */,
+				373429E316825493003D8FF7 /* YDButton.m in Sources */,
+				373429E416825493003D8FF7 /* YMDrawingAdditions.m in Sources */,
+				373429E716825BC0003D8FF7 /* YMColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		372537741671786400B7C051 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372537751671786400B7C051 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		372537831671786400B7C051 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372537841671786400B7C051 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		372537891671786400B7C051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3725378A1671786400B7C051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3725378C1671786400B7C051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174A7D49F9364E6A9E80C253 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Contact Creator/Contact Creator-Prefix.pch";
+				INFOPLIST_FILE = "Contact Creator/Contact Creator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3725378D1671786400B7C051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174A7D49F9364E6A9E80C253 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Contact Creator/Contact Creator-Prefix.pch";
+				INFOPLIST_FILE = "Contact Creator/Contact Creator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		372537611671786400B7C051 /* Build configuration list for PBXProject "Contact Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372537891671786400B7C051 /* Debug */,
+				3725378A1671786400B7C051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3725378B1671786400B7C051 /* Build configuration list for PBXNativeTarget "Contact Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3725378C1671786400B7C051 /* Debug */,
+				3725378D1671786400B7C051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3725375E1671786400B7C051 /* Project object */;
+}

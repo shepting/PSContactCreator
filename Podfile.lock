@@ -1,0 +1,14 @@
+
+COCOAPODS: 0.15.1
+
+SPEC CHECKSUMS: 
+  SVProgressHUD: 51042a14e3a716efdbdd73cbb2181fb23ee94389
+  ABContactHelper: 2364cfdddf265c09e4642e02c16aba39e41d6b8c
+
+DEPENDENCIES: 
+- ABContactHelper
+- SVProgressHUD
+
+PODS: 
+- ABContactHelper (0.0.1)
+- SVProgressHUD (0.8)
