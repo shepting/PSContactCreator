@@ -16,6 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *numContactsField;
-@property (weak, nonatomic) IBOutlet YDButton *generateButton;
+@property (weak, nonatomic) IBOutlet UIButton *generateButton;
 
 @end

@@ -24,9 +24,8 @@ const CGFloat LABEL_DISTANCE = 220.0;
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.numContactsField.borderStyle = UITextBorderStyleRoundedRect;
-    [self.generateButton setTintType:YDButtonTintTypeOrange];
-    self.generateButton.layer.zPosition = 2.0;
-    self.view.layer.zPosition = 3.0;
+//    self.generateButton.layer.zPosition = 2.0;
+//    self.view.layer.zPosition = 3.0;
     [self.generateButton addTarget:self action:@selector(generateButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     UIGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundTapped)];
@@ -64,20 +63,6 @@ const CGFloat LABEL_DISTANCE = 220.0;
     [UIView animateWithDuration:0.25 animations:^{
         view.frame = newFrame;
     }];
-}
-
-//- (void)handleGesture
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)viewDidUnload {
-    [self setNumContactsField:nil];
-    [self setGenerateButton:nil];
-    [self setNameLabel:nil];
-    [super viewDidUnload];
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
