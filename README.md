@@ -1,4 +1,4 @@
-PSContactGenerator
+PSContactCreator
 ==================
 
 Generate thousands of contacts to fill your device or simulator for testing/demo purposes. Currently lacking in documentation and diversity of contacts but still a work-in-progress.
