@@ -10,6 +10,7 @@
 #import "ABContactsHelper.h"
 #import "Names.h"
 #import "SVProgressHUD.h"
+#import "ABStandin.h"
 
 @implementation YMContactCreator
 
@@ -46,7 +47,9 @@
     NSArray *lastNames = [self lastNames];
     NSArray *domains = [self domains];
     
-    NSMutableArray *createdContacts = [NSMutableArray array];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [SVProgressHUD showWithStatus:@"Creating" maskType:SVProgressHUDMaskTypeGradient];
+    });
     for (int i = 0; i < n; i++) {
         
         // Choose male or female
@@ -62,7 +65,7 @@
         NSString *lastName = lastNames[lastIndex];
         
         // Emails
-        int numEmails = arc4random() % 5;
+        int numEmails = arc4random() % 2;
         NSMutableArray *emails = [NSMutableArray array];
         for (int j = 0; j < numEmails; j++) {
             int domainIndex = arc4random() % [domains count];
@@ -80,26 +83,35 @@
         newContact.emailDictionaries = emails;
         
         NSLog(@"Saving %@ %@", newContact.firstname, newContact.lastname);
-        [createdContacts addObject:newContact];
+        
+        NSError *error;
+        BOOL success = [ABContactsHelper addContact:newContact withError:&error];
+        if (!success) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [SVProgressHUD showErrorWithStatus:@"Error"];
+            });
+            NSLog(@"Error: %@", [error localizedDescription]);
+            return;
+        }
     }
-    
     dispatch_async(dispatch_get_main_queue(), ^{
         [SVProgressHUD showWithStatus:@"Saving" maskType:SVProgressHUDMaskTypeGradient];
     });
-    NSError *error;
-    if (![ABContactsHelper addContacts:createdContacts withError:&error]) {
+    
+    NSError *saveError;
+    BOOL saveSuccess = [ABStandin save:&saveError];
+    if (!saveSuccess) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [SVProgressHUD showErrorWithStatus:@"Error"];
         });
-        NSLog(@"Error: %@", [error localizedDescription]);
-    } else {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [SVProgressHUD showSuccessWithStatus:@"Done"];
-        });
-        NSLog(@"Done creating.");        
+        NSLog(@"Error: %@", [saveError localizedDescription]);
+        return;
     }
-    
-    
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [SVProgressHUD showSuccessWithStatus:@"Done"];
+    });
+    NSLog(@"Done creating.");
 }
 
 - (NSArray *)womensFirstNames
