@@ -8,7 +8,6 @@
 
 #import "YMViewController.h"
 #import "YMContactCreator.h"
-#import "YDButton.h"
 #import "QuartzCore/QuartzCore.h"
 
 const CGFloat BUTTON_DISTANCE = 200.0;

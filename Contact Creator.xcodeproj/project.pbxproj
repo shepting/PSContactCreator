@@ -19,10 +19,6 @@
 		372537821671786400B7C051 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372537811671786400B7C051 /* Default-568h@2x.png */; };
 		372537851671786400B7C051 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372537831671786400B7C051 /* MainStoryboard.storyboard */; };
 		372537881671786400B7C051 /* YMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537871671786400B7C051 /* YMViewController.m */; };
-		373429E216825493003D8FF7 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429DD16825493003D8FF7 /* UIColor+Extensions.m */; };
-		373429E316825493003D8FF7 /* YDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429DF16825493003D8FF7 /* YDButton.m */; };
-		373429E416825493003D8FF7 /* YMDrawingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429E116825493003D8FF7 /* YMDrawingAdditions.m */; };
-		373429E716825BC0003D8FF7 /* YMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 373429E616825BC0003D8FF7 /* YMColor.m */; };
 		373429E916825BDA003D8FF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373429E816825BDA003D8FF7 /* QuartzCore.framework */; };
 		373429EB16825F0D003D8FF7 /* blue_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 373429EA16825F0D003D8FF7 /* blue_background@2x.png */; };
 		3757DCE81676823800C8217D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3757DCE71676823800C8217D /* AddressBook.framework */; };
@@ -50,14 +46,6 @@
 		372537841671786400B7C051 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		372537861671786400B7C051 /* YMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMViewController.h; sourceTree = "<group>"; };
 		372537871671786400B7C051 /* YMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMViewController.m; sourceTree = "<group>"; };
-		373429DC16825493003D8FF7 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
-		373429DD16825493003D8FF7 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
-		373429DE16825493003D8FF7 /* YDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDButton.h; sourceTree = "<group>"; };
-		373429DF16825493003D8FF7 /* YDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDButton.m; sourceTree = "<group>"; };
-		373429E016825493003D8FF7 /* YMDrawingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDrawingAdditions.h; sourceTree = "<group>"; };
-		373429E116825493003D8FF7 /* YMDrawingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDrawingAdditions.m; sourceTree = "<group>"; };
-		373429E516825BC0003D8FF7 /* YMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColor.h; sourceTree = "<group>"; };
-		373429E616825BC0003D8FF7 /* YMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColor.m; sourceTree = "<group>"; };
 		373429E816825BDA003D8FF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		373429EA16825F0D003D8FF7 /* blue_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue_background@2x.png"; path = "Resources/blue_background@2x.png"; sourceTree = SOURCE_ROOT; };
 		3757DCE71676823800C8217D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -84,7 +72,6 @@
 		3725375C1671786400B7C051 = {
 			isa = PBXGroup;
 			children = (
-				373429E816825BDA003D8FF7 /* QuartzCore.framework */,
 				372537711671786400B7C051 /* Contact Creator */,
 				372537721671786400B7C051 /* Resources */,
 				3725376A1671786400B7C051 /* Frameworks */,
@@ -104,6 +91,7 @@
 		3725376A1671786400B7C051 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				373429E816825BDA003D8FF7 /* QuartzCore.framework */,
 				3757DCE71676823800C8217D /* AddressBook.framework */,
 				3725376B1671786400B7C051 /* UIKit.framework */,
 				3725376D1671786400B7C051 /* Foundation.framework */,
@@ -151,14 +139,6 @@
 		373429DB168250F7003D8FF7 /* Views & Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				373429E516825BC0003D8FF7 /* YMColor.h */,
-				373429E616825BC0003D8FF7 /* YMColor.m */,
-				373429DC16825493003D8FF7 /* UIColor+Extensions.h */,
-				373429DD16825493003D8FF7 /* UIColor+Extensions.m */,
-				373429DE16825493003D8FF7 /* YDButton.h */,
-				373429DF16825493003D8FF7 /* YDButton.m */,
-				373429E016825493003D8FF7 /* YMDrawingAdditions.h */,
-				373429E116825493003D8FF7 /* YMDrawingAdditions.m */,
 				3725377A1671786400B7C051 /* YMAppDelegate.h */,
 				3725377B1671786400B7C051 /* YMAppDelegate.m */,
 				372537831671786400B7C051 /* MainStoryboard.storyboard */,
@@ -258,10 +238,6 @@
 				3725377C1671786400B7C051 /* YMAppDelegate.m in Sources */,
 				372537881671786400B7C051 /* YMViewController.m in Sources */,
 				3721FB7616728F320079C930 /* YMContactCreator.m in Sources */,
-				373429E216825493003D8FF7 /* UIColor+Extensions.m in Sources */,
-				373429E316825493003D8FF7 /* YDButton.m in Sources */,
-				373429E416825493003D8FF7 /* YMDrawingAdditions.m in Sources */,
-				373429E716825BC0003D8FF7 /* YMColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
