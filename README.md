@@ -7,3 +7,11 @@ Generate thousands of contacts to fill your device or simulator for testing/demo
 ![Screenshot][screenshot]
 
 [screenshot]: https://raw.github.com/shepting/PSContactGenerator/master/Images/screenshot_small.png
+
+### Installation
+
+```bash
+git clone git@github.com:shepting/PSContactCreator.git
+cd PSContactCreator
+pod install
+```
