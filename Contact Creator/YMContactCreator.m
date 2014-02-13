@@ -21,22 +21,9 @@ typedef NS_ENUM(NSInteger, PSContactGender) {
 
 + (void)askAndCreateContactsWithCount:(NSInteger)numContacts
 {
-    if (&ABAddressBookGetAuthorizationStatus != NULL) {
-        ABAddressBookRequestAccessWithCompletion(ABAddressBookCreate(), ^(bool granted, CFErrorRef error) {
-            if (granted) {
-                NSLog(@"Access granted");
-                
-                YMContactCreator *creator = [[YMContactCreator alloc] init];
-                [creator createNContacts:numContacts];
-            }
-        });
-    } else {
-        NSLog(@"iOS 5, no access required.");
-        
+    if ([ABStandin hasAddressBookAccess:[ABStandin currentAddressBook]]) {
         YMContactCreator *creator = [[YMContactCreator alloc] init];
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            [creator createNContacts:numContacts];
-        });
+        [creator createNContacts:numContacts];
         
     }
 }
@@ -107,7 +94,7 @@ typedef NS_ENUM(NSInteger, PSContactGender) {
             int domainIndex = arc4random() % [domains count];
             NSString *domain = domains[domainIndex];
             
-            NSString *email = [NSString stringWithFormat:@"%@@%@", [lastName lowercaseString], domain];
+            NSString *email = [NSString stringWithFormat:@"%@.test@%@", [lastName lowercaseString], domain];
             
             [emails addObject:[ABContact dictionaryWithValue:email andLabel:kABWorkLabel]];
         }
