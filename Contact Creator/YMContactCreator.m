@@ -12,6 +12,11 @@
 #import "SVProgressHUD.h"
 #import "ABStandin.h"
 
+typedef NS_ENUM(NSInteger, PSContactGender) {
+    PSContactGenderFemale,
+    PSContactGenderMale,
+};
+
 @implementation YMContactCreator
 
 + (void)askAndCreateContactsWithCount:(NSInteger)numContacts
@@ -36,6 +41,37 @@
     }
 }
 
+- (PSContactGender)randomGender
+{
+    return (PSContactGender)arc4random_uniform(2);
+}
+
+- (BOOL)shouldHaveProfile
+{
+    return arc4random_uniform(100) < 90;
+}
+
+- (BOOL)coinFlip
+{
+    if (arc4random_uniform(2) == 1) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+- (UIImage *)randomProfileForGender:(PSContactGender)gender
+{
+    NSString *imageName;
+    if (gender == PSContactGenderFemale) {
+        imageName = [self coinFlip] ? @"profile2" : @"profile4";
+    } else {
+        imageName = [self coinFlip] ? @"profile1" : @"profile3";
+    }
+    
+    return [UIImage imageNamed:imageName];
+}
+
 - (void)createNContacts:(NSInteger)n
 {
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -53,8 +89,8 @@
     for (int i = 0; i < n; i++) {
         
         // Choose male or female
-        int gender = arc4random() % 2; // 0 male, 1 female
-        NSArray *namesArray = gender ? womensFirstNames : mensFirstNames;
+        PSContactGender gender = [self randomGender];
+        NSArray *namesArray = (gender == PSContactGenderFemale) ? womensFirstNames : mensFirstNames;
         
         // First name
         int firstIndex = arc4random() % [namesArray count];
@@ -65,7 +101,7 @@
         NSString *lastName = lastNames[lastIndex];
         
         // Emails
-        int numEmails = arc4random() % 2;
+        int numEmails = arc4random_uniform(3);
         NSMutableArray *emails = [NSMutableArray array];
         for (int j = 0; j < numEmails; j++) {
             int domainIndex = arc4random() % [domains count];
@@ -81,6 +117,11 @@
         newContact.firstname = firstName;
         newContact.lastname = lastName;
         newContact.emailDictionaries = emails;
+        
+        // Profile Picture
+        if ([self shouldHaveProfile]) {
+            newContact.image = [self randomProfileForGender:gender];
+        }
         
         NSLog(@"Saving %@ %@", newContact.firstname, newContact.lastname);
         

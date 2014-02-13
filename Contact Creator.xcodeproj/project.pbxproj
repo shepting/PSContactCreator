@@ -20,6 +20,10 @@
 		372537851671786400B7C051 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372537831671786400B7C051 /* MainStoryboard.storyboard */; };
 		372537881671786400B7C051 /* YMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537871671786400B7C051 /* YMViewController.m */; };
 		373429E916825BDA003D8FF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373429E816825BDA003D8FF7 /* QuartzCore.framework */; };
+		3740636618AC555700782E5D /* profile1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3740636218AC555700782E5D /* profile1.png */; };
+		3740636718AC555700782E5D /* profile2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3740636318AC555700782E5D /* profile2.png */; };
+		3740636818AC555700782E5D /* profile3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3740636418AC555700782E5D /* profile3.png */; };
+		3740636918AC555700782E5D /* profile4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3740636518AC555700782E5D /* profile4.png */; };
 		3757DCE81676823800C8217D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3757DCE71676823800C8217D /* AddressBook.framework */; };
 		8A86592227EE4FD5829DB2F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AB9ABAB4374EA5AD3D862D /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -46,6 +50,10 @@
 		372537861671786400B7C051 /* YMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMViewController.h; sourceTree = "<group>"; };
 		372537871671786400B7C051 /* YMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMViewController.m; sourceTree = "<group>"; };
 		373429E816825BDA003D8FF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3740636218AC555700782E5D /* profile1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile1.png; path = Images/profile1.png; sourceTree = SOURCE_ROOT; };
+		3740636318AC555700782E5D /* profile2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile2.png; path = Images/profile2.png; sourceTree = SOURCE_ROOT; };
+		3740636418AC555700782E5D /* profile3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile3.png; path = Images/profile3.png; sourceTree = SOURCE_ROOT; };
+		3740636518AC555700782E5D /* profile4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile4.png; path = Images/profile4.png; sourceTree = SOURCE_ROOT; };
 		3757DCE71676823800C8217D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		E3AB9ABAB4374EA5AD3D862D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +119,10 @@
 		372537721671786400B7C051 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3740636218AC555700782E5D /* profile1.png */,
+				3740636318AC555700782E5D /* profile2.png */,
+				3740636418AC555700782E5D /* profile3.png */,
+				3740636518AC555700782E5D /* profile4.png */,
 				372537731671786400B7C051 /* Contact Creator-Info.plist */,
 				372537741671786400B7C051 /* InfoPlist.strings */,
 				372537771671786400B7C051 /* main.m */,
@@ -201,7 +213,11 @@
 				372537761671786400B7C051 /* InfoPlist.strings in Resources */,
 				3725377E1671786400B7C051 /* Default.png in Resources */,
 				372537801671786400B7C051 /* Default@2x.png in Resources */,
+				3740636918AC555700782E5D /* profile4.png in Resources */,
+				3740636818AC555700782E5D /* profile3.png in Resources */,
+				3740636618AC555700782E5D /* profile1.png in Resources */,
 				372537821671786400B7C051 /* Default-568h@2x.png in Resources */,
+				3740636718AC555700782E5D /* profile2.png in Resources */,
 				372537851671786400B7C051 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
