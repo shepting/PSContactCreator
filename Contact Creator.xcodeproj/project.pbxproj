@@ -31,6 +31,7 @@
 		37E41AAB18E3BA0B00461516 /* Woman3.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E41AA318E3BA0B00461516 /* Woman3.png */; };
 		37E41AAC18E3BA0B00461516 /* Woman4.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E41AA418E3BA0B00461516 /* Woman4.png */; };
 		37E41AAF18E3BA5800461516 /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E41AAE18E3BA5800461516 /* NSArray+Random.m */; };
+		37E41AB218E3C24900461516 /* PSRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E41AB118E3C24900461516 /* PSRandom.m */; };
 		8A86592227EE4FD5829DB2F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AB9ABAB4374EA5AD3D862D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		37E41AA418E3BA0B00461516 /* Woman4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Woman4.png; path = Images/Woman4.png; sourceTree = SOURCE_ROOT; };
 		37E41AAD18E3BA5800461516 /* NSArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Random.h"; sourceTree = "<group>"; };
 		37E41AAE18E3BA5800461516 /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
+		37E41AB018E3C24900461516 /* PSRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRandom.h; sourceTree = "<group>"; };
+		37E41AB118E3C24900461516 /* PSRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRandom.m; sourceTree = "<group>"; };
 		E3AB9ABAB4374EA5AD3D862D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +164,8 @@
 				3721FB7516728F320079C930 /* YMContactCreator.m */,
 				37E41AAD18E3BA5800461516 /* NSArray+Random.h */,
 				37E41AAE18E3BA5800461516 /* NSArray+Random.m */,
+				37E41AB018E3C24900461516 /* PSRandom.h */,
+				37E41AB118E3C24900461516 /* PSRandom.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				372537781671786400B7C051 /* main.m in Sources */,
+				37E41AB218E3C24900461516 /* PSRandom.m in Sources */,
 				3725377C1671786400B7C051 /* YMAppDelegate.m in Sources */,
 				372537881671786400B7C051 /* YMViewController.m in Sources */,
 				3721FB7616728F320079C930 /* YMContactCreator.m in Sources */,
