@@ -35,27 +35,13 @@ const NSString *PSContactGenderFemale = @"female";
 
 - (NSString *)randomPhoneNumber
 {
-    int firstTuple = arc4random_uniform(900) + 99;
+    int firstTuple = arc4random_uniform(1800) + 199;
     int secondTuple = arc4random_uniform(900) + 99;
     int lastTuple = arc4random_uniform(9000) + 999;
 
     NSString *phoneNumber = [NSString stringWithFormat:@"(%i)%i-%i", firstTuple, secondTuple, lastTuple];
     
     return phoneNumber;
-}
-
-- (BOOL)shouldHaveProfile
-{
-    return arc4random_uniform(100) < 90;
-}
-
-- (BOOL)coinFlip
-{
-    if (arc4random_uniform(2) == 1) {
-        return YES;
-    } else {
-        return NO;
-    }
 }
 
 - (UIImage *)randomProfileForGender:(NSString *)gender
@@ -143,8 +129,16 @@ const NSString *PSContactGenderFemale = @"female";
             }
         }
         
+        if ([PSRandom chance:0.3]) {
+            [newContact addPhoneItem:[self randomPhoneNumber] withLabel:kABPersonPhoneMobileLabel];
+        } else if ([PSRandom chance:0.5]) {
+            [newContact addPhoneItem:[self randomPhoneNumber] withLabel:kABPersonPhoneIPhoneLabel];
+        } else {
+            [newContact addPhoneItem:[self randomPhoneNumber] withLabel:kABPersonPhoneWorkFAXLabel];
+        }
+        
         // Profile Picture
-        if ([self shouldHaveProfile]) {
+        if ([PSRandom chance:0.9]) {
             newContact.image = [self randomProfileForGender:gender];
         }
         
