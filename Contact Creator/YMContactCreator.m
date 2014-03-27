@@ -11,6 +11,7 @@
 #import "Names.h"
 #import "SVProgressHUD.h"
 #import "ABStandin.h"
+#import "NSArray+Random.h"
 
 typedef NS_ENUM(NSInteger, PSContactGender) {
     PSContactGenderFemale,
@@ -33,6 +34,17 @@ typedef NS_ENUM(NSInteger, PSContactGender) {
     return (PSContactGender)arc4random_uniform(2);
 }
 
+- (NSString *)randomPhoneNumber
+{
+    int firstTuple = arc4random_uniform(900) + 99;
+    int secondTuple = arc4random_uniform(900) + 99;
+    int lastTuple = arc4random_uniform(9000) + 999;
+
+    NSString *phoneNumber = [NSString stringWithFormat:@"(%i)%i-%i", firstTuple, secondTuple, lastTuple];
+    
+    return phoneNumber;
+}
+
 - (BOOL)shouldHaveProfile
 {
     return arc4random_uniform(100) < 90;
@@ -51,9 +63,9 @@ typedef NS_ENUM(NSInteger, PSContactGender) {
 {
     NSString *imageName;
     if (gender == PSContactGenderFemale) {
-        imageName = [self coinFlip] ? @"profile2" : @"profile4";
+        imageName = [@[@"Woman1", @"Woman2", @"Woman3"] randomItem];
     } else {
-        imageName = [self coinFlip] ? @"profile1" : @"profile3";
+        imageName = [@[@"Man1", @"Man2", @"Man3"] randomItem];
     }
     
     return [UIImage imageNamed:imageName];
@@ -80,12 +92,10 @@ typedef NS_ENUM(NSInteger, PSContactGender) {
         NSArray *namesArray = (gender == PSContactGenderFemale) ? womensFirstNames : mensFirstNames;
         
         // First name
-        int firstIndex = arc4random() % [namesArray count];
-        NSString *firstName = namesArray[firstIndex];
+        NSString *firstName = [namesArray randomItem];
         
         // Last name
-        int lastIndex = arc4random() % [lastNames count];
-        NSString *lastName = lastNames[lastIndex];
+        NSString *lastName = [lastNames randomItem];
         
         // Emails
         int numEmails = arc4random_uniform(3);
