@@ -10,7 +10,6 @@
 
 @interface PSRandom : NSObject
 
-+ (void)fifty:(void (^)(void))block fifty:(void (^)(void))block2;
 + (BOOL)chance:(CGFloat)chance; // 0-1.0
 
 @end

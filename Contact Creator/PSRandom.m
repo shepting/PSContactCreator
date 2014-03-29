@@ -15,11 +15,6 @@
     srand48(time(0));
 }
 
-+ (void)fifty:(void (^)(void))block fifty:(void (^)(void))block2
-{
-    
-}
-
 + (BOOL)chance:(CGFloat)chance
 {
     NSAssert(chance <= 1.0, @"Chance must be less than or equal to 1.0");
