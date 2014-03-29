@@ -11,6 +11,8 @@
 @interface YMContactCreator : NSObject
 
 + (void)askAndCreateContactsWithCount:(NSInteger)numContacts;
++ (void)deleteAllGeneratedContacts;
+
 - (void)createNContacts:(NSInteger)n;
 
 @end

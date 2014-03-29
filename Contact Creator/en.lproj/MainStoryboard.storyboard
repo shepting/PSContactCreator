@@ -34,13 +34,13 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="64"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuA-J4-Rfm">
-                                <rect key="frame" x="84" y="456" width="153" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuA-J4-Rfm">
+                                <rect key="frame" x="84" y="402" width="153" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="ONU-rS-Vdu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Generate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,15 +48,32 @@
                                     <action selector="generateButtonPressed:" destination="2" eventType="touchUpInside" id="VBt-Ac-wy2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAK-uj-HwZ">
+                                <rect key="frame" x="36" y="482" width="248" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="cIM-l7-fN3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Remove Generated">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="2" eventType="touchUpInside" id="cMe-QP-odR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87059550382653061" green="0.87059550382653061" blue="0.87059550382653061" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="q3E-k8-CmX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="21" id="1xE-NR-Kah"/>
                             <constraint firstItem="1e2-sW-K4H" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="95" id="7fw-Hi-oJm"/>
-                            <constraint firstItem="HZ9-wq-XkV" firstAttribute="top" secondItem="zuA-J4-Rfm" secondAttribute="bottom" constant="59" id="HRW-Jm-wvG"/>
+                            <constraint firstAttribute="centerX" secondItem="1e2-sW-K4H" secondAttribute="centerX" id="9hT-v3-3oT"/>
                             <constraint firstItem="q3E-k8-CmX" firstAttribute="top" secondItem="HsR-Bz-eKF" secondAttribute="bottom" constant="47" id="I7x-Dz-S8o"/>
+                            <constraint firstItem="rAK-uj-HwZ" firstAttribute="top" secondItem="zuA-J4-Rfm" secondAttribute="bottom" constant="21" id="MPY-ax-XoE"/>
+                            <constraint firstItem="HZ9-wq-XkV" firstAttribute="top" secondItem="rAK-uj-HwZ" secondAttribute="bottom" constant="20" id="VKx-RC-4dl"/>
                             <constraint firstItem="zuA-J4-Rfm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="84" id="fgp-3e-Dpm"/>
                             <constraint firstItem="1e2-sW-K4H" firstAttribute="top" secondItem="q3E-k8-CmX" secondAttribute="bottom" constant="50" id="nbQ-zO-cEf"/>
+                            <constraint firstItem="zuA-J4-Rfm" firstAttribute="top" secondItem="1e2-sW-K4H" secondAttribute="bottom" constant="8" id="o6A-tN-9AC"/>
                             <constraint firstAttribute="trailing" secondItem="q3E-k8-CmX" secondAttribute="trailing" constant="13" id="pVt-Be-vpK"/>
                             <constraint firstAttribute="trailing" secondItem="zuA-J4-Rfm" secondAttribute="trailing" constant="83" id="uE9-Hi-J3g"/>
                         </constraints>

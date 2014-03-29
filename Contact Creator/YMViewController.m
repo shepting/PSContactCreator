@@ -80,4 +80,10 @@ const CGFloat LABEL_DISTANCE = 220.0;
     [YMContactCreator askAndCreateContactsWithCount:numContacts];
 
 }
+
+- (IBAction)deleteButtonPressed:(id)sender {
+    NSLog(@"Delete button pressed.");
+
+    [YMContactCreator deleteAllGeneratedContacts];
+}
 @end

@@ -13,6 +13,7 @@
 @interface YMViewController : UIViewController <UIGestureRecognizerDelegate>
 
 - (IBAction)generateButtonPressed:(id)sender;
+- (IBAction)deleteButtonPressed:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *numContactsField;

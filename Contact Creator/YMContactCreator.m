@@ -16,6 +16,7 @@
 
 const NSString *PSContactGenderMale = @"male";
 const NSString *PSContactGenderFemale = @"female";
+NSString *PSContactGeneratedTag = @"Generated";
 
 @implementation YMContactCreator
 
@@ -25,6 +26,28 @@ const NSString *PSContactGenderFemale = @"female";
         YMContactCreator *creator = [[YMContactCreator alloc] init];
         [creator createNContacts:numContacts];
         
+    }
+}
+
++ (void)deleteAllGeneratedContacts
+{
+    if ([ABStandin hasAddressBookAccess:[ABStandin currentAddressBook]]) {
+        NSPredicate *generatedPredicate = [NSPredicate predicateWithFormat:@"note contains %@", PSContactGeneratedTag];
+        NSArray *generatedContacts = [ABContactsHelper contactsMatchingPredicate:generatedPredicate];
+        NSUInteger numGenerated = [generatedContacts count];
+        for (ABContact *contact in generatedContacts) {
+            NSLog(@"%@", contact);
+            CFErrorRef cfError;
+            BOOL success = ABAddressBookRemoveRecord([ABStandin addressBook], contact.record, &cfError);
+            if (success) {
+                [ABStandin save:nil];
+                [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"Deleted %lu Generated Contacts", numGenerated]];
+            }
+            if (!success) {
+                NSLog(@"Failed removing: %@", (__bridge_transfer NSError *)cfError);
+
+            }
+        }
     }
 }
 
@@ -141,6 +164,8 @@ const NSString *PSContactGenderFemale = @"female";
         if ([PSRandom chance:0.9]) {
             newContact.image = [self randomProfileForGender:gender];
         }
+        
+        [newContact setNote:PSContactGeneratedTag];
         
         NSLog(@"Saving %@ %@", newContact.firstname, newContact.lastname);
         
