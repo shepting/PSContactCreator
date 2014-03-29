@@ -48,9 +48,9 @@ const NSString *PSContactGenderFemale = @"female";
 {
     NSString *imageName;
     if (gender == PSContactGenderFemale) {
-        imageName = [@[@"Woman1", @"Woman2", @"Woman3"] randomItem];
+        imageName = [@[@"Woman1", @"Woman2", @"Woman3", @"Woman4"] randomItem];
     } else {
-        imageName = [@[@"Man1", @"Man2", @"Man3"] randomItem];
+        imageName = [@[@"Man1", @"Man2", @"Man3", @"Man4"] randomItem];
     }
     
     return [UIImage imageNamed:imageName];
