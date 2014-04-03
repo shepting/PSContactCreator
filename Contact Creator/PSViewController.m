@@ -1,13 +1,13 @@
 //
-//  YMViewController.m
+//  PSViewController.m
 //  Contact Creator
 //
 //  Created by Steven Hepting on 12/6/12.
 //  Copyright (c) 2012 Yammer. All rights reserved.
 //
 
-#import "YMViewController.h"
-#import "YMContactCreator.h"
+#import "PSViewController.h"
+#import "PSContactCreator.h"
 #import "QuartzCore/QuartzCore.h"
 
 const CGFloat BUTTON_DISTANCE = 200.0;
@@ -15,7 +15,7 @@ const CGFloat FIELD_DISTANCE = 210.0;
 const CGFloat LABEL_DISTANCE = 220.0;
 
 
-@implementation YMViewController
+@implementation PSViewController
 
 - (void)viewDidLoad
 {
@@ -77,13 +77,13 @@ const CGFloat LABEL_DISTANCE = 220.0;
     NSLog(@"Generate button pressed.");
     
     NSInteger numContacts = [self.numContactsField.text integerValue];
-    [YMContactCreator askAndCreateContactsWithCount:numContacts];
+    [PSContactCreator askAndCreateContactsWithCount:numContacts];
 
 }
 
 - (IBAction)deleteButtonPressed:(id)sender {
     NSLog(@"Delete button pressed.");
 
-    [YMContactCreator deleteAllGeneratedContacts];
+    [PSContactCreator deleteAllGeneratedContacts];
 }
 @end

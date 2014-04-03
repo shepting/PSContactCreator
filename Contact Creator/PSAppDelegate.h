@@ -1,5 +1,5 @@
 //
-//  YMAppDelegate.h
+//  PSAppDelegate.h
 //  Contact Creator
 //
 //  Created by Steven Hepting on 12/6/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface PSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

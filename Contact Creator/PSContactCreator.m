@@ -1,12 +1,12 @@
 //
-//  YMContactCreator.m
+//  PSContactCreator.m
 //  Contact Creator
 //
 //  Created by Steven Hepting on 12/7/12.
 //  Copyright (c) 2012 Yammer. All rights reserved.
 //
 
-#import "YMContactCreator.h"
+#import "PSContactCreator.h"
 #import "ABContactsHelper.h"
 #import "Names.h"
 #import "SVProgressHUD.h"
@@ -18,12 +18,12 @@ const NSString *PSContactGenderMale = @"male";
 const NSString *PSContactGenderFemale = @"female";
 NSString *PSContactGeneratedTag = @"Generated";
 
-@implementation YMContactCreator
+@implementation PSContactCreator
 
 + (void)askAndCreateContactsWithCount:(NSInteger)numContacts
 {
     if ([ABStandin hasAddressBookAccess:[ABStandin currentAddressBook]]) {
-        YMContactCreator *creator = [[YMContactCreator alloc] init];
+        PSContactCreator *creator = [[PSContactCreator alloc] init];
         [creator createNContacts:numContacts];
         
     }

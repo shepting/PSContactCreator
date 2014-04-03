@@ -1,5 +1,5 @@
 //
-//  YMContactCreator.h
+//  PSContactCreator.h
 //  Contact Creator
 //
 //  Created by Steven Hepting on 12/7/12.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YMContactCreator : NSObject
+@interface PSContactCreator : NSObject
 
 + (void)askAndCreateContactsWithCount:(NSInteger)numContacts;
 + (void)deleteAllGeneratedContacts;

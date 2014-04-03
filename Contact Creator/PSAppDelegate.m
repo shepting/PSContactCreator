@@ -1,15 +1,15 @@
 //
-//  YMAppDelegate.m
+//  PSAppDelegate.m
 //  Contact Creator
 //
 //  Created by Steven Hepting on 12/6/12.
 //  Copyright (c) 2012 Yammer. All rights reserved.
 //
 
-#import "YMAppDelegate.h"
-#import "YMContactCreator.h"
+#import "PSAppDelegate.h"
+#import "PSContactCreator.h"
 
-@implementation YMAppDelegate
+@implementation PSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

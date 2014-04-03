@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3721FB7616728F320079C930 /* YMContactCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721FB7516728F320079C930 /* YMContactCreator.m */; };
+		3721FB7616728F320079C930 /* PSContactCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721FB7516728F320079C930 /* PSContactCreator.m */; };
 		3725376C1671786400B7C051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725376B1671786400B7C051 /* UIKit.framework */; };
 		3725376E1671786400B7C051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725376D1671786400B7C051 /* Foundation.framework */; };
 		372537701671786400B7C051 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725376F1671786400B7C051 /* CoreGraphics.framework */; };
 		372537761671786400B7C051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 372537741671786400B7C051 /* InfoPlist.strings */; };
 		372537781671786400B7C051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537771671786400B7C051 /* main.m */; };
-		3725377C1671786400B7C051 /* YMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3725377B1671786400B7C051 /* YMAppDelegate.m */; };
+		3725377C1671786400B7C051 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3725377B1671786400B7C051 /* PSAppDelegate.m */; };
 		3725377E1671786400B7C051 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3725377D1671786400B7C051 /* Default.png */; };
 		372537801671786400B7C051 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3725377F1671786400B7C051 /* Default@2x.png */; };
 		372537821671786400B7C051 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372537811671786400B7C051 /* Default-568h@2x.png */; };
 		372537851671786400B7C051 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372537831671786400B7C051 /* MainStoryboard.storyboard */; };
-		372537881671786400B7C051 /* YMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537871671786400B7C051 /* YMViewController.m */; };
+		372537881671786400B7C051 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537871671786400B7C051 /* PSViewController.m */; };
 		373429E916825BDA003D8FF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373429E816825BDA003D8FF7 /* QuartzCore.framework */; };
 		3757DCE81676823800C8217D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3757DCE71676823800C8217D /* AddressBook.framework */; };
 		37E41A9C18E3B87100461516 /* PortraitAttribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37E41A9B18E3B87100461516 /* PortraitAttribution.txt */; };
@@ -37,8 +37,8 @@
 
 /* Begin PBXFileReference section */
 		174A7D49F9364E6A9E80C253 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		3721FB7416728F320079C930 /* YMContactCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMContactCreator.h; sourceTree = "<group>"; };
-		3721FB7516728F320079C930 /* YMContactCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMContactCreator.m; sourceTree = "<group>"; };
+		3721FB7416728F320079C930 /* PSContactCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSContactCreator.h; sourceTree = "<group>"; };
+		3721FB7516728F320079C930 /* PSContactCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSContactCreator.m; sourceTree = "<group>"; };
 		3721FB7816728F960079C930 /* Names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Names.h; sourceTree = "<group>"; };
 		372537671671786400B7C051 /* Contact Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3725376B1671786400B7C051 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -48,14 +48,14 @@
 		372537751671786400B7C051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		372537771671786400B7C051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		372537791671786400B7C051 /* Contact Creator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contact Creator-Prefix.pch"; sourceTree = "<group>"; };
-		3725377A1671786400B7C051 /* YMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAppDelegate.h; sourceTree = "<group>"; };
-		3725377B1671786400B7C051 /* YMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAppDelegate.m; sourceTree = "<group>"; };
+		3725377A1671786400B7C051 /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
+		3725377B1671786400B7C051 /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAppDelegate.m; sourceTree = "<group>"; };
 		3725377D1671786400B7C051 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3725377F1671786400B7C051 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		372537811671786400B7C051 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		372537841671786400B7C051 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		372537861671786400B7C051 /* YMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMViewController.h; sourceTree = "<group>"; };
-		372537871671786400B7C051 /* YMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMViewController.m; sourceTree = "<group>"; };
+		372537861671786400B7C051 /* PSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		372537871671786400B7C051 /* PSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		373429E816825BDA003D8FF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3757DCE71676823800C8217D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		37E41A9B18E3B87100461516 /* PortraitAttribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PortraitAttribution.txt; path = Images/PortraitAttribution.txt; sourceTree = SOURCE_ROOT; };
@@ -160,8 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				3721FB7816728F960079C930 /* Names.h */,
-				3721FB7416728F320079C930 /* YMContactCreator.h */,
-				3721FB7516728F320079C930 /* YMContactCreator.m */,
+				3721FB7416728F320079C930 /* PSContactCreator.h */,
+				3721FB7516728F320079C930 /* PSContactCreator.m */,
 				37E41AAD18E3BA5800461516 /* NSArray+Random.h */,
 				37E41AAE18E3BA5800461516 /* NSArray+Random.m */,
 				37E41AB018E3C24900461516 /* PSRandom.h */,
@@ -173,11 +173,11 @@
 		373429DB168250F7003D8FF7 /* Views & Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3725377A1671786400B7C051 /* YMAppDelegate.h */,
-				3725377B1671786400B7C051 /* YMAppDelegate.m */,
+				3725377A1671786400B7C051 /* PSAppDelegate.h */,
+				3725377B1671786400B7C051 /* PSAppDelegate.m */,
 				372537831671786400B7C051 /* MainStoryboard.storyboard */,
-				372537861671786400B7C051 /* YMViewController.h */,
-				372537871671786400B7C051 /* YMViewController.m */,
+				372537861671786400B7C051 /* PSViewController.h */,
+				372537871671786400B7C051 /* PSViewController.m */,
 			);
 			name = "Views & Controllers";
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 			files = (
 				372537781671786400B7C051 /* main.m in Sources */,
 				37E41AB218E3C24900461516 /* PSRandom.m in Sources */,
-				3725377C1671786400B7C051 /* YMAppDelegate.m in Sources */,
-				372537881671786400B7C051 /* YMViewController.m in Sources */,
-				3721FB7616728F320079C930 /* YMContactCreator.m in Sources */,
+				3725377C1671786400B7C051 /* PSAppDelegate.m in Sources */,
+				372537881671786400B7C051 /* PSViewController.m in Sources */,
+				3721FB7616728F320079C930 /* PSContactCreator.m in Sources */,
 				37E41AAF18E3BA5800461516 /* NSArray+Random.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

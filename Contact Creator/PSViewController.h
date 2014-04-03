@@ -1,5 +1,5 @@
 //
-//  YMViewController.h
+//  PSViewController.h
 //  Contact Creator
 //
 //  Created by Steven Hepting on 12/6/12.
@@ -10,7 +10,7 @@
 
 @class YDButton;
 
-@interface YMViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface PSViewController : UIViewController <UIGestureRecognizerDelegate>
 
 - (IBAction)generateButtonPressed:(id)sender;
 - (IBAction)deleteButtonPressed:(id)sender;
