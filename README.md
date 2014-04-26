@@ -14,3 +14,5 @@ git clone git@github.com:shepting/PSContactCreator.git
 cd PSContactCreator
 pod install
 ```
+
+Note: was previously called PSContactGenerator
