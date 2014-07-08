@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" textAlignment="center" minimumFontSize="24" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-sW-K4H">
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" textAlignment="center" minimumFontSize="24" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-sW-K4H">
                                 <rect key="frame" x="95" y="325" width="130" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="QgC-Yz-Dmu"/>
                                     <constraint firstAttribute="height" constant="69" id="uVd-B1-XnU"/>
@@ -30,13 +28,11 @@
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000000000000016" contentMode="left" misplaced="YES" text="Contact Creator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" translatesAutoresizingMaskIntoConstraints="NO" id="q3E-k8-CmX">
                                 <rect key="frame" x="21" y="67" width="286" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="64"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuA-J4-Rfm">
                                 <rect key="frame" x="84" y="402" width="153" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="ONU-rS-Vdu"/>
                                 </constraints>
@@ -50,11 +46,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAK-uj-HwZ">
                                 <rect key="frame" x="36" y="482" width="248" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="cIM-l7-fN3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Remove Generated">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -66,13 +61,12 @@
                         <color key="backgroundColor" red="0.87059550382653061" green="0.87059550382653061" blue="0.87059550382653061" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="q3E-k8-CmX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="21" id="1xE-NR-Kah"/>
-                            <constraint firstItem="1e2-sW-K4H" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="95" id="7fw-Hi-oJm"/>
                             <constraint firstAttribute="centerX" secondItem="1e2-sW-K4H" secondAttribute="centerX" id="9hT-v3-3oT"/>
                             <constraint firstItem="q3E-k8-CmX" firstAttribute="top" secondItem="HsR-Bz-eKF" secondAttribute="bottom" constant="47" id="I7x-Dz-S8o"/>
                             <constraint firstItem="rAK-uj-HwZ" firstAttribute="top" secondItem="zuA-J4-Rfm" secondAttribute="bottom" constant="21" id="MPY-ax-XoE"/>
                             <constraint firstItem="HZ9-wq-XkV" firstAttribute="top" secondItem="rAK-uj-HwZ" secondAttribute="bottom" constant="20" id="VKx-RC-4dl"/>
                             <constraint firstItem="zuA-J4-Rfm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="84" id="fgp-3e-Dpm"/>
-                            <constraint firstItem="1e2-sW-K4H" firstAttribute="top" secondItem="q3E-k8-CmX" secondAttribute="bottom" constant="50" id="nbQ-zO-cEf"/>
+                            <constraint firstItem="1e2-sW-K4H" firstAttribute="top" relation="lessThanOrEqual" secondItem="q3E-k8-CmX" secondAttribute="bottom" constant="50" id="nbQ-zO-cEf"/>
                             <constraint firstItem="zuA-J4-Rfm" firstAttribute="top" secondItem="1e2-sW-K4H" secondAttribute="bottom" constant="8" id="o6A-tN-9AC"/>
                             <constraint firstAttribute="trailing" secondItem="q3E-k8-CmX" secondAttribute="trailing" constant="13" id="pVt-Be-vpK"/>
                             <constraint firstAttribute="trailing" secondItem="zuA-J4-Rfm" secondAttribute="trailing" constant="83" id="uE9-Hi-J3g"/>
@@ -91,6 +85,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>
