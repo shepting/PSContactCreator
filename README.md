@@ -11,8 +11,7 @@ Currently lacking in documentation and diversity of contacts but still a work-in
 
 ```bash
 git clone git@github.com:shepting/PSContactCreator.git
-cd PSContactCreator
-pod install
+open "PSContactCreator/Contact Creator.xcworkspace/"
 ```
 
 Note: was previously called PSContactGenerator
