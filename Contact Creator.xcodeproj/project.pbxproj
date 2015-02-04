@@ -18,7 +18,7 @@
 		372537801671786400B7C051 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3725377F1671786400B7C051 /* Default@2x.png */; };
 		372537821671786400B7C051 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372537811671786400B7C051 /* Default-568h@2x.png */; };
 		372537851671786400B7C051 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372537831671786400B7C051 /* MainStoryboard.storyboard */; };
-		372537881671786400B7C051 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537871671786400B7C051 /* PSViewController.m */; };
+		372537881671786400B7C051 /* ContactCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372537871671786400B7C051 /* ContactCreatorViewController.m */; };
 		373429E916825BDA003D8FF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373429E816825BDA003D8FF7 /* QuartzCore.framework */; };
 		3757DCE81676823800C8217D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3757DCE71676823800C8217D /* AddressBook.framework */; };
 		37E41A9C18E3B87100461516 /* PortraitAttribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37E41A9B18E3B87100461516 /* PortraitAttribution.txt */; };
@@ -36,7 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		174A7D49F9364E6A9E80C253 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		3721FB7416728F320079C930 /* PSContactCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSContactCreator.h; sourceTree = "<group>"; };
 		3721FB7516728F320079C930 /* PSContactCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSContactCreator.m; sourceTree = "<group>"; };
 		3721FB7816728F960079C930 /* Names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Names.h; sourceTree = "<group>"; };
@@ -54,8 +53,8 @@
 		3725377F1671786400B7C051 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		372537811671786400B7C051 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		372537841671786400B7C051 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		372537861671786400B7C051 /* PSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
-		372537871671786400B7C051 /* PSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
+		372537861671786400B7C051 /* ContactCreatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactCreatorViewController.h; sourceTree = "<group>"; };
+		372537871671786400B7C051 /* ContactCreatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactCreatorViewController.m; sourceTree = "<group>"; };
 		373429E816825BDA003D8FF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3757DCE71676823800C8217D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		37E41A9B18E3B87100461516 /* PortraitAttribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PortraitAttribution.txt; path = Images/PortraitAttribution.txt; sourceTree = SOURCE_ROOT; };
@@ -71,6 +70,8 @@
 		37E41AAE18E3BA5800461516 /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
 		37E41AB018E3C24900461516 /* PSRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRandom.h; sourceTree = "<group>"; };
 		37E41AB118E3C24900461516 /* PSRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRandom.m; sourceTree = "<group>"; };
+		45732B57ADCC2F2FB72591DE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D2642887AA30790C39F8554E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E3AB9ABAB4374EA5AD3D862D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3BCD2946CC571DAAD19E08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45732B57ADCC2F2FB72591DE /* Pods.debug.xcconfig */,
+				D2642887AA30790C39F8554E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3725375C1671786400B7C051 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +108,7 @@
 				372537721671786400B7C051 /* Resources */,
 				3725376A1671786400B7C051 /* Frameworks */,
 				372537681671786400B7C051 /* Products */,
-				174A7D49F9364E6A9E80C253 /* Pods.xcconfig */,
+				0B3BCD2946CC571DAAD19E08 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,8 +186,8 @@
 				3725377A1671786400B7C051 /* PSAppDelegate.h */,
 				3725377B1671786400B7C051 /* PSAppDelegate.m */,
 				372537831671786400B7C051 /* MainStoryboard.storyboard */,
-				372537861671786400B7C051 /* PSViewController.h */,
-				372537871671786400B7C051 /* PSViewController.m */,
+				372537861671786400B7C051 /* ContactCreatorViewController.h */,
+				372537871671786400B7C051 /* ContactCreatorViewController.m */,
 			);
 			name = "Views & Controllers";
 			sourceTree = "<group>";
@@ -267,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -279,7 +289,7 @@
 				372537781671786400B7C051 /* main.m in Sources */,
 				37E41AB218E3C24900461516 /* PSRandom.m in Sources */,
 				3725377C1671786400B7C051 /* PSAppDelegate.m in Sources */,
-				372537881671786400B7C051 /* PSViewController.m in Sources */,
+				372537881671786400B7C051 /* ContactCreatorViewController.m in Sources */,
 				3721FB7616728F320079C930 /* PSContactCreator.m in Sources */,
 				37E41AAF18E3BA5800461516 /* NSArray+Random.m in Sources */,
 			);
@@ -359,7 +369,7 @@
 		};
 		3725378C1671786400B7C051 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 174A7D49F9364E6A9E80C253 /* Pods.xcconfig */;
+			baseConfigurationReference = 45732B57ADCC2F2FB72591DE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Contact Creator/Contact Creator-Prefix.pch";
@@ -372,7 +382,7 @@
 		};
 		3725378D1671786400B7C051 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 174A7D49F9364E6A9E80C253 /* Pods.xcconfig */;
+			baseConfigurationReference = D2642887AA30790C39F8554E /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Contact Creator/Contact Creator-Prefix.pch";

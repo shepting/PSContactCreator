@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Yammer. All rights reserved.
 //
 
-#import "PSViewController.h"
+#import "ContactCreatorViewController.h"
 #import "PSContactCreator.h"
 #import "QuartzCore/QuartzCore.h"
 
@@ -15,7 +15,7 @@ const CGFloat FIELD_DISTANCE = 210.0;
 const CGFloat LABEL_DISTANCE = 220.0;
 
 
-@implementation PSViewController
+@implementation ContactCreatorViewController
 
 - (void)viewDidLoad
 {

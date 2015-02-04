@@ -10,7 +10,7 @@
 
 @class YDButton;
 
-@interface PSViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface ContactCreatorViewController : UIViewController <UIGestureRecognizerDelegate>
 
 - (IBAction)generateButtonPressed:(id)sender;
 - (IBAction)deleteButtonPressed:(id)sender;
