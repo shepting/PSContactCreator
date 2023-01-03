@@ -1,1 +1,0 @@
-PODS_ABCONTACTHELPER_OTHER_LDFLAGS = -framework "AddressBook" -framework "AddressBookUI"
