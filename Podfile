@@ -1,4 +1,8 @@
-platform :ios, '6.0'
+platform :ios, '16.0'
 
-pod 'ABContactHelper'
-pod 'SVProgressHUD'
+target 'Contact Creator' do
+  pod 'ABContactHelper'
+  pod 'SVProgressHUD'
+end
+
+workspace 'Contact Creator.xcworkspace'
